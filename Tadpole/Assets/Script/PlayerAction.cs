@@ -48,9 +48,9 @@ public class PlayerAction : MonoBehaviour
 
         //방향전환
         if (x < 0)
-            spriteRenderer.flipX = false;
-        if (x > 0)
             spriteRenderer.flipX = true;
+        if (x > 0)
+            spriteRenderer.flipX = false;
 
     }
 
