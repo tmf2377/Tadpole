@@ -74,7 +74,11 @@ MonoBehaviour:
   m_MinSize: {x: 276, y: 292}
   m_MaxSize: {x: 4001, y: 8042}
   vertical: 1
+<<<<<<< HEAD
+  controlID: 172
+=======
   controlID: 165
+>>>>>>> f340475eb6e1b3988d63c1e808ae2e5a883c76c1
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -125,7 +129,11 @@ MonoBehaviour:
   m_MinSize: {x: 333, y: 271}
   m_MaxSize: {x: 14003, y: 10021}
   vertical: 0
+<<<<<<< HEAD
+  controlID: 131
+=======
   controlID: 129
+>>>>>>> f340475eb6e1b3988d63c1e808ae2e5a883c76c1
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -150,7 +158,11 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
+<<<<<<< HEAD
+  controlID: 171
+=======
   controlID: 127
+>>>>>>> f340475eb6e1b3988d63c1e808ae2e5a883c76c1
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -196,8 +208,8 @@ MonoBehaviour:
     y: 0
     width: 484
     height: 871
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -321,7 +333,11 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 14003, y: 14042}
   vertical: 1
+<<<<<<< HEAD
+  controlID: 130
+=======
   controlID: 128
+>>>>>>> f340475eb6e1b3988d63c1e808ae2e5a883c76c1
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -542,20 +558,26 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Script
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Script
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\PC\Desktop\SeulHee\GitHub\Tadpole\Tadpole
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
+    m_SelectedIDs: 5a3e0000
+    m_LastClickedID: 15962
+    m_ExpandedIDs: 000000004a3e000000ca9a3b
+=======
     m_SelectedIDs: 643f0000
     m_LastClickedID: 16228
     m_ExpandedIDs: 00000000543f000000ca9a3b
+>>>>>>> f340475eb6e1b3988d63c1e808ae2e5a883c76c1
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -583,7 +605,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
+    m_ExpandedIDs: 000000004a3e0000
+=======
     m_ExpandedIDs: 00000000543f0000
+>>>>>>> f340475eb6e1b3988d63c1e808ae2e5a883c76c1
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -706,6 +732,15 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
+      m_SelectedIDs: 06400000
+      m_LastClickedID: 16390
+      m_ExpandedIDs: 26faffff42faffff60fbffffac3f0000
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+=======
       m_SelectedIDs: 
       m_LastClickedID: 0
       m_ExpandedIDs: 780afcffb40afcffd80afcfffc0afcff680bfcff8c0bfcffc80bfcff680cfcff8c0cfcff363afcff880afdffa617ffffbcb7ffff92bcffffcac1ffff40c5ffff78cfffffb4f6ffff0a40000062400000784100007a4200002443000090430000
@@ -713,16 +748,21 @@ MonoBehaviour:
         m_UserAcceptedRename: 0
         m_Name: Logo
         m_OriginalName: Logo
+>>>>>>> f340475eb6e1b3988d63c1e808ae2e5a883c76c1
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
+<<<<<<< HEAD
+        m_UserData: 0
+=======
         m_UserData: 17340
+>>>>>>> f340475eb6e1b3988d63c1e808ae2e5a883c76c1
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 8}
       m_SearchString: 
@@ -768,9 +808,15 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
+    m_Target: {x: 4.3841777, y: 0.24941117, z: -55.70508}
+    speed: 2
+    m_Value: {x: 4.3841777, y: 0.24941117, z: -55.70508}
+=======
     m_Target: {x: 5.1930137, y: 4.8480844, z: -2.5496545}
     speed: 2
     m_Value: {x: 5.1930137, y: 4.8480844, z: -2.5496545}
+>>>>>>> f340475eb6e1b3988d63c1e808ae2e5a883c76c1
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -820,9 +866,15 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
+<<<<<<< HEAD
+    m_Target: 15.870132
+    speed: 2
+    m_Value: 15.870132
+=======
     m_Target: 22.875788
     speed: 2
     m_Value: 22.875788
+>>>>>>> f340475eb6e1b3988d63c1e808ae2e5a883c76c1
   m_Ortho:
     m_Target: 1
     speed: 2
