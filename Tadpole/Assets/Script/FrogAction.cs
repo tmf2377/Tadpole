@@ -89,7 +89,10 @@ public class FrogAction : MonoBehaviour
             RaycastHit2D rayHit = Physics2D.Raycast(rigid.position, Vector3.down, 1, LayerMask.GetMask("Platform"));
             if(rayHit.collider != null){
                 if(rayHit.distance < 0.5f)
-                    anim.SetBool("isJumping",false);
+                {
+                    anim.SetBool("isJumping", false);
+                }
+
             }
         }
 
@@ -107,7 +110,15 @@ public class FrogAction : MonoBehaviour
     public void JumpButton(){
         if (jumpCount > 0)
         {
-            rigid.AddForce(Vector2.up * jumpPower, ForceMode2D.Impulse);
+            if(jumpCount == 1)
+            {
+                rigid.AddForce(Vector2.up * jumpPower/2, ForceMode2D.Impulse);
+            }
+            if(jumpCount == 2)
+            {
+                rigid.AddForce(Vector2.up * jumpPower, ForceMode2D.Impulse);
+            }
+            //rigid.AddForce(Vector2.up * jumpPower, ForceMode2D.Impulse);
             anim.SetBool("isJumping", true);
             jumpCount--;
         }
