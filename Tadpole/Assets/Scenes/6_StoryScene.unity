@@ -958,7 +958,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 677241621}
-  speed: 2
+  speed: 3
   center: {x: 74, y: -6.4}
   size: {x: 165.9, y: 18.58}
 --- !u!81 &870057380
