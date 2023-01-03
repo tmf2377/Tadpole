@@ -3624,7 +3624,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   virtualJoystick: {fileID: 1379852196}
-  moveSpeed: 5
+  moveSpeed: 3
 --- !u!212 &1599690892
 SpriteRenderer:
   m_ObjectHideFlags: 0
