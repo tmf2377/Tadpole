@@ -12932,6 +12932,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 905670996}
-  speed: 0
+  speed: 3
   center: {x: 86.9, y: 1.1}
   size: {x: 190, y: 21.2}

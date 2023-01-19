@@ -7,16 +7,33 @@ using System.Net.Sockets;
 
 public class GameManager : MonoBehaviour
 {
+    // GameManager
     public static GameManager instance = null;
     
+    // Don't Destroy 관련 변수
     public bool isFirstLoad;
     public bool IsTadpole;
     public bool IsFrog;
 
+    // stage 관련 변수
     public int stage;
+    private int activeScene;
 
+    // 어,, 그냥 일단 가져옴
     public GameObject[] enemies;
     public List<int> enemyList;
+
+    public GameObject tadpole;
+    public GameObject frog;
+
+    // UI 관련 변수
+    public GameObject tadpoleCam;
+    public GameObject frogCam;
+
+    public GameObject menuPanel;
+    public GameObject gamePanel;
+    public GameObject overPanal;
+    public RectTransform playerHealthGroup;
 
     void Awake()
     {
@@ -37,7 +54,64 @@ public class GameManager : MonoBehaviour
         IsTadpole = false;
         IsFrog = false;
 
-       
+        menuPanel.SetActive(true);
+        gamePanel.SetActive(false);
+    }
+
+    void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        activeScene = SceneManager.GetActiveScene().buildIndex;
+        if(activeScene == 0)
+        {
+            tadpoleCam.SetActive(false);
+            frogCam.SetActive(false);
+
+            tadpole.SetActive(false);
+            frog.SetActive(false);
+        }
+        else if(activeScene < 5)
+        {
+            tadpoleCam.SetActive(true);
+            frogCam.SetActive(false);
+
+            tadpole.SetActive(true);
+            frog.SetActive(false);
+        }
+        else
+        {
+            tadpoleCam.SetActive(false);
+            frogCam.SetActive(true);
+
+            tadpole.SetActive(false);
+            frog.SetActive(true);
+        }
+
+
+        if (!isFirstLoad && SceneManager.GetActiveScene().name == "0_StartScene")
+        {
+            //menuCam = GameObject.FindGameObjectWithTag("MenuCam");
+            //menuCam.SetActive(false);
+        }
+        if (SceneManager.GetActiveScene().name != "0_StartScene")
+            StageStart();
+    }
+
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    public void GameStart()
+    {
+        menuPanel.SetActive(false);
+        gamePanel.SetActive(true);
+        //Player.instance.gameObject.SetActive(true);
+        isFirstLoad = false;
     }
 
     public void StageStart()
