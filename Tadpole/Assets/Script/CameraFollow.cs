@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
+    public static CameraFollow instance = null;
     // Start is called before the first frame update
     public Transform target;
     public float speed;
@@ -17,6 +18,20 @@ public class CameraFollow : MonoBehaviour
     {
         height = Camera.main.orthographicSize;  //세로의 절반크기
         width = height * Screen.width / Screen.height;  //가로 = 세로 * 스크린 가로 / 스크린 세로
+    }
+
+    void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            if (instance != this)
+                Destroy(this.gameObject);
+        }
     }
 
     private void OnDrawGizmos()
