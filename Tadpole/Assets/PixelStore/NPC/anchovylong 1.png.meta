@@ -1,7 +1,34 @@
 fileFormatVersion: 2
 guid: 35dcb537d92bcac44acd35404825154b
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -3329926089302934311
+    second: anchovylong 1_0
+  - first:
+      213: -8255688660854154022
+    second: anchovylong 1_1
+  - first:
+      213: 1952979715487672658
+    second: anchovylong 1_2
+  - first:
+      213: 6382747163159982776
+    second: anchovylong 1_3
+  - first:
+      213: 4193992327639834418
+    second: anchovylong 1_4
+  - first:
+      213: 657711368213166079
+    second: anchovylong 1_5
+  - first:
+      213: 5498106807304002743
+    second: anchovylong 1_6
+  - first:
+      213: 6956105002704892367
+    second: anchovylong 1_7
+  - first:
+      213: -2631045547293526788
+    second: anchovylong 1_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -40,12 +67,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 300
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -71,9 +98,222 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: anchovylong 1_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 55
+        width: 209
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dcface4dd9b9c1d0800000000000000
+      internalID: -3329926089302934311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anchovylong 1_1
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 48
+        width: 210
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adc519947e6ed6d80800000000000000
+      internalID: -8255688660854154022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anchovylong 1_2
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 48
+        width: 202
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 259af2334b06a1b10800000000000000
+      internalID: 1952979715487672658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anchovylong 1_3
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 55
+        width: 210
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b278474ab2149850800000000000000
+      internalID: 6382747163159982776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anchovylong 1_4
+      rect:
+        serializedVersion: 2
+        x: 897
+        y: 55
+        width: 210
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23f9faf1dcd043a30800000000000000
+      internalID: 4193992327639834418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anchovylong 1_5
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 41
+        width: 209
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff7f4133109a02900800000000000000
+      internalID: 657711368213166079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anchovylong 1_6
+      rect:
+        serializedVersion: 2
+        x: 1342
+        y: 41
+        width: 203
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bc1382d2033d4c40800000000000000
+      internalID: 5498106807304002743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anchovylong 1_7
+      rect:
+        serializedVersion: 2
+        x: 1565
+        y: 41
+        width: 209
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc1fa8a15ac098060800000000000000
+      internalID: 6956105002704892367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anchovylong 1_8
+      rect:
+        serializedVersion: 2
+        x: 1787
+        y: 55
+        width: 210
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf432bdb306ac7bd0800000000000000
+      internalID: -2631045547293526788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
