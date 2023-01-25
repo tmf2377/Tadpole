@@ -1366,7 +1366,7 @@ MonoBehaviour:
     type: 3}
   behavior: {fileID: 11400000, guid: 4320ebac551031a4989e3b44800a255c, type: 2}
   startingCount: 250
-  driveFactor: 10
+  driveFactor: 31
   maxspeed: 5
   neighborRadius: 1.5
   avoidanceRadiusMultiplier: 0.5
@@ -1378,7 +1378,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 439999026}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 53.9, y: 1.9, z: -106.96325}
+  m_LocalPosition: {x: 57.6, y: 3, z: -106.96325}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
