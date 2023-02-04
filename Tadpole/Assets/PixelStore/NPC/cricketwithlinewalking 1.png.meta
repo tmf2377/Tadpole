@@ -1,7 +1,43 @@
 fileFormatVersion: 2
 guid: b87a61b067cc9e44cbc37d61c9be91bc
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -3975320899585891194
+    second: cricketwithlinewalking 1_0
+  - first:
+      213: -1954687164871066060
+    second: cricketwithlinewalking 1_1
+  - first:
+      213: -3624408531538773977
+    second: cricketwithlinewalking 1_2
+  - first:
+      213: -8662071879522457478
+    second: cricketwithlinewalking 1_3
+  - first:
+      213: -4016417085877428795
+    second: cricketwithlinewalking 1_4
+  - first:
+      213: 6275087169930427794
+    second: cricketwithlinewalking 1_5
+  - first:
+      213: -8451719360745603444
+    second: cricketwithlinewalking 1_6
+  - first:
+      213: -9067588002719257617
+    second: cricketwithlinewalking 1_7
+  - first:
+      213: 4120702440096291214
+    second: cricketwithlinewalking 1_8
+  - first:
+      213: 6630528104430613485
+    second: cricketwithlinewalking 1_9
+  - first:
+      213: -3909998736972055928
+    second: cricketwithlinewalking 1_10
+  - first:
+      213: -5880400445066334901
+    second: cricketwithlinewalking 1_11
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -31,7 +67,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -40,12 +76,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 320
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -64,7 +100,31 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -73,7 +133,259 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: cricketwithlinewalking 1_0
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 28
+        width: 253
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6842ff734b2d4d8c0800000000000000
+      internalID: -3975320899585891194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cricketwithlinewalking 1_1
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 28
+        width: 252
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43e38d2416e8fd4e0800000000000000
+      internalID: -1954687164871066060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cricketwithlinewalking 1_2
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 28
+        width: 253
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7287cbcb4a383bdc0800000000000000
+      internalID: -3624408531538773977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cricketwithlinewalking 1_3
+      rect:
+        serializedVersion: 2
+        x: 1009
+        y: 28
+        width: 232
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a78e92ae4832ac780800000000000000
+      internalID: -8662071879522457478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cricketwithlinewalking 1_4
+      rect:
+        serializedVersion: 2
+        x: 1329
+        y: 28
+        width: 233
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cd5776b0f1d248c0800000000000000
+      internalID: -4016417085877428795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cricketwithlinewalking 1_5
+      rect:
+        serializedVersion: 2
+        x: 1648
+        y: 28
+        width: 233
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29d7052c886951750800000000000000
+      internalID: 6275087169930427794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cricketwithlinewalking 1_6
+      rect:
+        serializedVersion: 2
+        x: 1969
+        y: 28
+        width: 253
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8e7771450675ba80800000000000000
+      internalID: -8451719360745603444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cricketwithlinewalking 1_7
+      rect:
+        serializedVersion: 2
+        x: 2289
+        y: 28
+        width: 252
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: feb2350f0c4792280800000000000000
+      internalID: -9067588002719257617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cricketwithlinewalking 1_8
+      rect:
+        serializedVersion: 2
+        x: 2608
+        y: 28
+        width: 253
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e89560f690daf2930800000000000000
+      internalID: 4120702440096291214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cricketwithlinewalking 1_9
+      rect:
+        serializedVersion: 2
+        x: 2929
+        y: 28
+        width: 232
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de3b4d15e2e540c50800000000000000
+      internalID: 6630528104430613485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cricketwithlinewalking 1_10
+      rect:
+        serializedVersion: 2
+        x: 3249
+        y: 28
+        width: 233
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88afd826dd4ecb9c0800000000000000
+      internalID: -3909998736972055928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cricketwithlinewalking 1_11
+      rect:
+        serializedVersion: 2
+        x: 3568
+        y: 28
+        width: 233
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4da5ce63fe946ea0800000000000000
+      internalID: -5880400445066334901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
