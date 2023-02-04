@@ -1,7 +1,49 @@
 fileFormatVersion: 2
 guid: 1740d07274ba5c749b6c517d1d68cafc
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 6661463000058787611
+    second: wjsrkf 1_0
+  - first:
+      213: 5393082881260329424
+    second: wjsrkf 1_1
+  - first:
+      213: -3625609020612783999
+    second: wjsrkf 1_2
+  - first:
+      213: 2475932199483197603
+    second: wjsrkf 1_3
+  - first:
+      213: -7947215233398071290
+    second: wjsrkf 1_4
+  - first:
+      213: -5706499345303389843
+    second: wjsrkf 1_5
+  - first:
+      213: 5387084522562479175
+    second: wjsrkf 1_6
+  - first:
+      213: -7089647625931168921
+    second: wjsrkf 1_7
+  - first:
+      213: -7399713189621097553
+    second: wjsrkf 1_8
+  - first:
+      213: -83443649590182116
+    second: wjsrkf 1_9
+  - first:
+      213: 3435235344564255786
+    second: wjsrkf 1_10
+  - first:
+      213: -1126695882101260712
+    second: wjsrkf 1_11
+  - first:
+      213: 1779611056084525077
+    second: wjsrkf 1_12
+  - first:
+      213: -9172716163059938460
+    second: wjsrkf 1_13
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -31,7 +73,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -40,12 +82,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 320
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -64,7 +106,31 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -73,7 +139,301 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: wjsrkf 1_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 0
+        width: 617
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1779eafd45427c50800000000000000
+      internalID: 6661463000058787611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wjsrkf 1_1
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 0
+        width: 614
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d913c58e4418da40800000000000000
+      internalID: 5393082881260329424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wjsrkf 1_2
+      rect:
+        serializedVersion: 2
+        x: 1326
+        y: 0
+        width: 617
+        height: 559
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1805ce71ecf3fadc0800000000000000
+      internalID: -3625609020612783999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wjsrkf 1_3
+      rect:
+        serializedVersion: 2
+        x: 1984
+        y: 9
+        width: 618
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a8c526a7374c5220800000000000000
+      internalID: 2475932199483197603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wjsrkf 1_4
+      rect:
+        serializedVersion: 2
+        x: 2647
+        y: 0
+        width: 613
+        height: 604
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6002cb3f9d1d5b190800000000000000
+      internalID: -7947215233398071290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wjsrkf 1_5
+      rect:
+        serializedVersion: 2
+        x: 3305
+        y: 0
+        width: 614
+        height: 604
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d69313c64117ec0b0800000000000000
+      internalID: -5706499345303389843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wjsrkf 1_6
+      rect:
+        serializedVersion: 2
+        x: 3964
+        y: 0
+        width: 617
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 744675ec4d4c2ca40800000000000000
+      internalID: 5387084522562479175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wjsrkf 1_7
+      rect:
+        serializedVersion: 2
+        x: 4622
+        y: 9
+        width: 618
+        height: 631
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7636ea9fb038c9d90800000000000000
+      internalID: -7089647625931168921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wjsrkf 1_8
+      rect:
+        serializedVersion: 2
+        x: 5285
+        y: 0
+        width: 613
+        height: 604
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fab9cd43f00fe4990800000000000000
+      internalID: -7399713189621097553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wjsrkf 1_9
+      rect:
+        serializedVersion: 2
+        x: 5943
+        y: 0
+        width: 618
+        height: 604
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1f3a6b517c87def0800000000000000
+      internalID: -83443649590182116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wjsrkf 1_10
+      rect:
+        serializedVersion: 2
+        x: 6602
+        y: 0
+        width: 617
+        height: 559
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2c7e9068586caf20800000000000000
+      internalID: 3435235344564255786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wjsrkf 1_11
+      rect:
+        serializedVersion: 2
+        x: 7264
+        y: 9
+        width: 614
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85e7571901c2d50f0800000000000000
+      internalID: -1126695882101260712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wjsrkf 1_12
+      rect:
+        serializedVersion: 2
+        x: 7923
+        y: 0
+        width: 613
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 510a644a3d272b810800000000000000
+      internalID: 1779611056084525077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wjsrkf 1_13
+      rect:
+        serializedVersion: 2
+        x: 8581
+        y: 0
+        width: 618
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46b0453bf37f3b080800000000000000
+      internalID: -9172716163059938460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
