@@ -8,11 +8,17 @@ public class StartMain : MonoBehaviour
 {
     //bgm;
     GameObject BackgroundMusic;
-    AudioSource backmusic;
+    public AudioSource backmusic;
     public GameObject canvas;
     public GameObject SettingPanel;
     public GameObject ExitPanel;
     private int canvasChild = 6; // 씬 개수
+
+
+    // 설정 관련 변수
+    public GameObject BGAudio;
+    public GameObject clickAudio;
+    public GameObject viveOb;
 
     void Start()
     {
@@ -76,17 +82,33 @@ public class StartMain : MonoBehaviour
         SettingPanel.SetActive(false);
     }
 
-    public void bgmON()
+    public void BGAudioOn()
     {
-        backmusic.Play();
-        //PlayerPrefs.SetInt("mainBGM", 0);
-        ////Debug.Log("mainBGM on");
+        BGAudio.SetActive(true);
     }
 
-    public void bgmOff()
+    public void BGAudioOff()
     {
-        backmusic.Pause();
-        //PlayerPrefs.SetInt("mainBGM", 1);
+        BGAudio.SetActive(false);
     }
 
+    public void clickAudioOn()
+    {
+        clickAudio.SetActive(true);
+    }
+
+    public void clickAudioOff()
+    {
+        clickAudio.SetActive(false);
+    }
+
+    public void viveOn()
+    {
+        viveOb.SetActive(true);
+    }
+
+    public void viveOff()
+    {
+        viveOb.SetActive(false);
+    }
 }
