@@ -5,72 +5,71 @@ using UnityEngine;
 public class criket_Move : MonoBehaviour
 {
     Rigidbody2D rigid;      //물리를 받아야 하기에 리지드바디 추가
-    public float nextMove_x, nextMove_y;        //행동지표를 결정할 변수 
     SpriteRenderer spriteRenderer;  //문워크 방지
+    public int nextMove;        //행동지표를 결정할 변수
+    public bool isJump = false;
+    public float jumpPower;
 
-    // Start is called before the first frame update
-    void Awake()
+    private void Awake()
     {
-        rigid = GetComponent<Rigidbody2D>();    //초기화
+        rigid = GetComponent<Rigidbody2D>();
         spriteRenderer = this.GetComponent<SpriteRenderer>();
-
-        //주어진 시간이 지난 뒤 지정된 함수를 실행 : Invoke()
-        Think_walk();
+        jumpPower = 5;
+        nextMove = 3;
+        
+        Jump();
     }
 
-    // Update is called once per frame
-    void FixedUpdate()      //물리기반이기에 FixedUpdate로 한다
+    private void Update()
     {
-        int temp = 0;
-        if(nextMove_x == 2)
-        {
-            temp = -1;
-        }
-        else if(nextMove_x == -2)
-        {
-            temp = 1;
-        }
-        //Move
-        rigid.velocity = new Vector2(nextMove_x, rigid.velocity.y);     //왼쪽으로만 움직이는 경우 x축은 -1, y축 은 현재의 값
-                                                                      //nextMove를 통해 x축을 랜덤으로 결정
+        //이동
+        rigid.velocity = new Vector2(nextMove, rigid.velocity.y);
         //방향전환
-        if (nextMove_x < 0)
+        if (nextMove < 0)
             spriteRenderer.flipX = false;
-        if (nextMove_x > 0)
-            spriteRenderer.flipX = true; 
+        if (nextMove > 0)
+            spriteRenderer.flipX = true;
+
+        Debug.DrawRay(rigid.position, Vector3.down, new Color(1, 0, 0));
+
+        RaycastHit2D rayHitJump = Physics2D.Raycast(rigid.position, Vector3.down, 1, LayerMask.GetMask("Platform"));
+        //빔의 시작위치, 빔의 방향 , 1:distance , ( 빔에 맞은 오브젝트를 특정 레이어로 한정 지어야할 때 사용 ) // RaycastHit2D : Ray에 닿은 오브젝트 클래스 
+
+        //rayHit는 여러개 맞더라도 처음 맞은 오브젝트의 정보만을 저장(?) 
+        if (rigid.velocity.y < 0)
+        { // 뛰어올랐다가 아래로 떨어질 때만 빔을 쏨 
+            if (rayHitJump.collider != null)
+            { //빔을 맞은 오브젝트가 있을때  -> 맞지않으면 collider도 생성되지않음 
+                if (rayHitJump.distance < 0.5f)
+                    isJump = false;
+            }
+        }
 
         //Platform Check
-        Vector2 frontVec = new Vector2(rigid.position.x + nextMove_x + temp, rigid.position.y);      //x축은 자기 자신의 앞을,y축은 자기 자신을 미리 본다
+        Vector2 frontVec = new Vector2(rigid.position.x + (nextMove / 2), rigid.position.y);      //x축은 자기 자신의 앞을,y축은 자기 자신을 미리 본다
         Debug.DrawRay(frontVec, Vector3.down, new Color(0, 1, 0));
         RaycastHit2D rayHit = Physics2D.Raycast(frontVec, Vector3.down, 1, LayerMask.GetMask("Platform"));
-        if (rayHit.collider == null)
+        if (rayHit.collider == null && isJump == false)
         {
-            nextMove_x = nextMove_x * -1;
-            CancelInvoke();     //작동중인 Invoke가 멈춤
-            Invoke("Think_walk", 1);     //5초를 다시 셈
+            nextMove = nextMove * -1;           
         }
         //낭떠러지를 만나는 경우 방향을 바꿈
     }
+    void Jump()
+    {
+        if(!isJump)
+        {
+            isJump = true;
+            rigid.AddForce(Vector2.up * jumpPower, ForceMode2D.Impulse);            
+        }        
+        Invoke("Jump", 5);
+    }
 
-    //행동지표를 바꿔줄 메서드 //reculsive
-    void Think_walk()
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        nextMove_x = Random.Range(-0.8f, 0.8f);    //랜덤수의 범위
-                                             //최소값은 범위에 포함되지만 최대값은 포함되지 않는다
-
-        Invoke("Think_jump", 3);
-       
-    }
-    void Think_jump()
-    {
-        rigid.gravityScale = 0.2f;
-        nextMove_y = Random.Range(1f, 2f);
-        Invoke("zero_y", 1);
-        Invoke("Think_walk", 2);
-    }
-    void zero_y()
-    {
-        rigid.gravityScale = 1f;
-        nextMove_y = 0f;
-    }
+        if (collision.gameObject.name.Equals("Platform"))
+        {
+            isJump = false;
+        }
+    }    
 }

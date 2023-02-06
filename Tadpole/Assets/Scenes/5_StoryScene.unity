@@ -13113,8 +13113,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de24bdce5c85e7b43a99a3725bd8c44a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextMove_x: 0
-  nextMove_y: 0
+  nextMove: 0
+  isJump: 0
+  jumpPower: 0
 --- !u!61 &1254420642
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13221,7 +13222,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1254420639}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 39.22, y: 2.303, z: -107.48927}
+  m_LocalPosition: {x: 39.22, y: 2.303, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -13351,9 +13352,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c111c70ccd876141b0762f63bb733e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  backmusic: {fileID: 0}
   canvas: {fileID: 1291438205}
   SettingPanel: {fileID: 1910584460}
   ExitPanel: {fileID: 813716519}
+  BGAudio: {fileID: 0}
+  clickAudio: {fileID: 0}
+  viveOb: {fileID: 0}
 --- !u!1 &1292719670
 GameObject:
   m_ObjectHideFlags: 0
