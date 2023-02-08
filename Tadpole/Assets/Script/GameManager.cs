@@ -70,18 +70,16 @@ public class GameManager : MonoBehaviour
         // (씬 로드 시) 씬에 있는 카메라에 플레이어 할당
         if (activeScene == 0)
         {
-            //tadpoleCam.SetActive(false);
-            //frogCam.SetActive(false);
+            tadpoleCam.SetActive(false);
+            frogCam.SetActive(false);
 
             tadpole.SetActive(false);
             frog.SetActive(false);
-
-
         }
         else if(activeScene < 5)
         {
-            //tadpoleCam.SetActive(true);
-            //frogCam.SetActive(false);
+            tadpoleCam.SetActive(true);
+            frogCam.SetActive(false);
 
             tadpole.SetActive(true);
             frog.SetActive(false);
@@ -90,12 +88,13 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            //tadpoleCam.SetActive(false);
-            //frogCam.SetActive(true);
+            tadpoleCam.SetActive(false);
+            frogCam.SetActive(true);
 
             tadpole.SetActive(false);
             frog.SetActive(true);
 
+           
 
         }
 
