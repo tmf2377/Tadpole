@@ -128,18 +128,43 @@ public class FrogAction : MonoBehaviour
     public void ShootButton()
     {
         anim.SetBool("isShooting", true);
-        
+        Invoke("Shoot", 1.0f);
+
+    }
+
+    public void Shoot()
+    {
+        anim.SetBool("isShooting", false);
+
 
     }
 
     public void EatButton()
     {
         anim.SetBool("isEating", true);
+        //if("먹이"가 콜라이더에 닿으면){
+        //invoke("Eat", 0.1f);
+        //}else if(아무것도 없으면){
+        Invoke("NoEat", 1.0f);
+        //}
 
+    }
+
+    public void Eat()
+    {
+        
+
+    }
+
+    public void NoEat()
+    {
+        anim.SetBool("isEating", false);
+        
     }
 
     public void OutButton()
     {
-
+        //anim.SetBool("isOutting", true);
+        anim.SetBool("isEating", false);
     }
 }
