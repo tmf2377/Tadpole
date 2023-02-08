@@ -88,5 +88,5 @@ public class criket_Move : MonoBehaviour
 
         Invoke("JumpTime", jumpTime);
     }
-
+    //
 }
