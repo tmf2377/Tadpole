@@ -489,9 +489,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 12.026796, y: 4.897487, z: -116.95461}
+    m_Target: {x: 719.3738, y: 335.9894, z: -73.777374}
     speed: 2
-    m_Value: {x: 12.212292, y: 4.9188576, z: -116.89241}
+    m_Value: {x: 719.3738, y: 335.9894, z: -73.777374}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -541,9 +541,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 14.431478
+    m_Target: 556.583
     speed: 2
-    m_Value: 13.810026
+    m_Value: 556.583
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -561,7 +561,7 @@ MonoBehaviour:
     m_FarClip: 10000
     m_DynamicClip: 1
     m_OcclusionCulling: 0
-  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+  m_LastSceneViewRotation: {x: -0.10758391, y: 0.61939144, z: -0.08621838, w: -0.7728823}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -699,34 +699,34 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/PixelStore/NPC
+    - Assets/Scenes/ScoreMode
   m_ViewMode: 1
   m_StartGridSize: 68
   m_LastFolders:
-  - Assets/PixelStore/NPC
+  - Assets/Scenes/ScoreMode
   m_LastFoldersGridSize: 68
   m_LastProjectPath: E:\Tedpol\Tadpole\Tadpole
   m_LockTracker:
     m_IsLocked: 1
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: e2410000
-    m_LastClickedID: 16866
-    m_ExpandedIDs: 00000000bc410000be410000c041000000ca9a3b
+    m_SelectedIDs: 16600000
+    m_LastClickedID: 24598
+    m_ExpandedIDs: 00000000bc400000be400000c0400000f64000001660000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: ScoreMode
+      m_OriginalName: ScoreMode
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 24598
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 8}
     m_SearchString: 
@@ -740,7 +740,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000bc410000be410000c0410000
+    m_ExpandedIDs: 00000000bc400000be400000c0400000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -767,7 +767,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000523f00004646000080430000f041000042400000324000006857000060570000027e000028440000d0430000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -863,23 +863,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 324e0000
-      m_LastClickedID: 20018
-      m_ExpandedIDs: b0ccffff0ee2ffff10edffff6ef0ffffa8f1ffff3af5ffffc4f7ffff60fbffff
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: b69ffeffbcbffeffa6c0feffd8c3feffccc4feffe0ccfeff8acdfeff08e1feff34f3feff2ef4feff00fafeff7a01ffff3a06ffff0007ffffd00affff0c0cffff741fffff981fffffc21fffff2024ffff382dffff6a2dffff5c2effff8a2effffb22fffffda2fffff7c37ffff3a43ffffc443ffff7256ffff8856ffffde56ffff5865ffff2cb2ffff30b2ffff72b2fffff8b5ffff4cc0ffff8cd1ffffdad1ffffa6d2ffff20d5ffffecd5ffff2cd7ffff9cd9ffff78dcffff94dcffffc6dfffff30f1ffff60fbffff24420000764200001a43000050600000a260000046610000cc6200001e630000c2630000b86500000a660000ae660000c06a0000126b00009c6b0000b66b00001c76000026760000f2760000a6790000f87900009e7a0000ce7b00002e7c0000807c0000267d00002e7e00005c7e0000c27e0000147f00009e7f0000ba7f0000888b0000da8b0000068c0000648c00007e8c0000a89a0000b89a0000e89a0000049f0000569f0000fc9f00001aa1000056a10000b6a2000008a30000aea30000cca4000008a50000f2a5000044a60000cea60000eaa6000048a80000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: TedpoleButton
+        m_OriginalName: TedpoleButton
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: 43018
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 4
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 7}
       m_SearchString: 

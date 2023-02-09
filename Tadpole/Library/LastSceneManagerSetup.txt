@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/8_StoryScene.unity
+- path: Assets/Scenes/ScoreMode/SelectScene.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
