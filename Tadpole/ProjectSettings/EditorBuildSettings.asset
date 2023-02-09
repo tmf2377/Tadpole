@@ -80,4 +80,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/24_StoryScene.unity
     guid: 25ba5033feaf9fb4891e4c2002344c14
+  - enabled: 1
+    path: Assets/Scenes/ScoreMode/SelectScene.unity
+    guid: 8e5b8881c316a914bb19b988f3332462
+  - enabled: 1
+    path: Assets/Scenes/ScoreMode/InfiniteFrog.unity
+    guid: 7e728693f4438a34b920db7f54f81cd7
+  - enabled: 1
+    path: Assets/Scenes/ScoreMode/InfiniteTedpole.unity
+    guid: 6815e3ff1e1adbf4a84016010045174a
   m_configObjects: {}
