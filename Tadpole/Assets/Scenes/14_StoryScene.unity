@@ -153,9 +153,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c111c70ccd876141b0762f63bb733e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  backmusic: {fileID: 0}
   canvas: {fileID: 32339518}
   SettingPanel: {fileID: 1781103600}
   ExitPanel: {fileID: 1711687788}
+  BGAudio: {fileID: 0}
+  clickAudio: {fileID: 0}
+  viveOb: {fileID: 0}
 --- !u!114 &32339520
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -582,7 +586,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 296758503}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fef511cdc45d7ab4cad7408ec61c33d5, type: 3}
+  m_Script: {fileID: 11500000, guid: c6a9c1689fff85d459bf8dcaa4936c84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!61 &296758505
@@ -1829,7 +1833,7 @@ TilemapRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
+  m_ChunkCullingBounds: {x: 0.03333336, y: 0.03333336, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
@@ -4199,7 +4203,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileSpriteIndex: 18
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -14014,9 +14018,8 @@ Tilemap:
   - m_RefCount: 6
     m_Data: {fileID: 11400000, guid: b74a37bae75d80d488887806ea85f022, type: 2}
   m_TileSpriteArray:
-  - m_RefCount: 1
-    m_Data: {fileID: -2603350055418293462, guid: dc63d090886adc14d869250d7acda158,
-      type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 75
     m_Data: {fileID: 1165418105640200068, guid: dc63d090886adc14d869250d7acda158,
       type: 3}
@@ -14065,8 +14068,9 @@ Tilemap:
   - m_RefCount: 2
     m_Data: {fileID: -1868007697265983366, guid: 4cf35f5e7f3471e4fac8e90517028eae,
       type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: -2603350055418293462, guid: dc63d090886adc14d869250d7acda158,
+      type: 3}
   - m_RefCount: 2
     m_Data: {fileID: 4709906564440223139, guid: 06e820fa15927b8488b1815c066d8c1b,
       type: 3}

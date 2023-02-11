@@ -6,20 +6,19 @@ using UnityEngine.UI;
 
 public class SceneChange_1 : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    public void SceneChanger()
+    public void StoryScene()
     {
         SceneManager.LoadScene("1_StoryScene");
+    }
+
+
+    public void TadpoleScene()
+    {
+        SceneManager.LoadScene("InfiniteTedpole");
+    }
+
+    public void FrogScene()
+    {
+        SceneManager.LoadScene("InfiniteFrog");
     }
 }
