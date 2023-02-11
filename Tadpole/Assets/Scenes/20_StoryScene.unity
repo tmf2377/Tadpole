@@ -1143,9 +1143,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c111c70ccd876141b0762f63bb733e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  backmusic: {fileID: 0}
   canvas: {fileID: 652673749}
   SettingPanel: {fileID: 342618594}
   ExitPanel: {fileID: 253423135}
+  BGAudio: {fileID: 0}
+  clickAudio: {fileID: 0}
+  viveOb: {fileID: 0}
 --- !u!114 &652673751
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1709,7 +1713,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 952075092}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fef511cdc45d7ab4cad7408ec61c33d5, type: 3}
+  m_Script: {fileID: 11500000, guid: c6a9c1689fff85d459bf8dcaa4936c84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!61 &952075094

@@ -1194,7 +1194,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 909806697}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fef511cdc45d7ab4cad7408ec61c33d5, type: 3}
+  m_Script: {fileID: 11500000, guid: c6a9c1689fff85d459bf8dcaa4936c84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!61 &909806699
@@ -1414,9 +1414,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c111c70ccd876141b0762f63bb733e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  backmusic: {fileID: 0}
   canvas: {fileID: 1146618955}
   SettingPanel: {fileID: 1217160050}
   ExitPanel: {fileID: 1341536837}
+  BGAudio: {fileID: 0}
+  clickAudio: {fileID: 0}
+  viveOb: {fileID: 0}
 --- !u!114 &1146618957
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2474,7 +2478,7 @@ TilemapRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
+  m_ChunkCullingBounds: {x: 0.03333336, y: 0.03333336, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0

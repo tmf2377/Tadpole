@@ -1185,7 +1185,7 @@ TilemapRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
+  m_ChunkCullingBounds: {x: 0.03333336, y: 0.03333336, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
@@ -1575,7 +1575,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 22
-      m_TileSpriteIndex: 22
+      m_TileSpriteIndex: 28
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -1655,7 +1655,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 24
-      m_TileSpriteIndex: 24
+      m_TileSpriteIndex: 25
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -2185,7 +2185,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 21
-      m_TileSpriteIndex: 21
+      m_TileSpriteIndex: 24
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -2895,7 +2895,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 14
-      m_TileSpriteIndex: 14
+      m_TileSpriteIndex: 22
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -4125,7 +4125,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 2
-      m_TileSpriteIndex: 2
+      m_TileSpriteIndex: 21
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -13917,8 +13917,8 @@ Tilemap:
       type: 3}
   - m_RefCount: 52
     m_Data: {fileID: 145896371169443082, guid: dc63d090886adc14d869250d7acda158, type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: 94363869085233206, guid: dc63d090886adc14d869250d7acda158, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 2
     m_Data: {fileID: -1868007697265983366, guid: 4cf35f5e7f3471e4fac8e90517028eae,
       type: 3}
@@ -13952,8 +13952,8 @@ Tilemap:
   - m_RefCount: 4
     m_Data: {fileID: 9016414881388995269, guid: dc63d090886adc14d869250d7acda158,
       type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: 679059126079515544, guid: 4cf35f5e7f3471e4fac8e90517028eae, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 6
     m_Data: {fileID: -34471587028002963, guid: dc63d090886adc14d869250d7acda158, type: 3}
   - m_RefCount: 33
@@ -13971,27 +13971,27 @@ Tilemap:
     m_Data: {fileID: 1519228949214357161, guid: 06e820fa15927b8488b1815c066d8c1b,
       type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 4709906564440223139, guid: 06e820fa15927b8488b1815c066d8c1b,
-      type: 3}
+    m_Data: {fileID: 94363869085233206, guid: dc63d090886adc14d869250d7acda158, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -3889058175634479619, guid: 06e820fa15927b8488b1815c066d8c1b,
-      type: 3}
+    m_Data: {fileID: 679059126079515544, guid: 4cf35f5e7f3471e4fac8e90517028eae, type: 3}
   - m_RefCount: 7
     m_Data: {fileID: 1764783100082792453, guid: 06e820fa15927b8488b1815c066d8c1b,
       type: 3}
   - m_RefCount: 1
+    m_Data: {fileID: 4709906564440223139, guid: 06e820fa15927b8488b1815c066d8c1b,
+      type: 3}
+  - m_RefCount: 1
     m_Data: {fileID: 5454111375877968852, guid: 06e820fa15927b8488b1815c066d8c1b,
       type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
   - m_RefCount: 63
     m_Data: {fileID: -6802198193789874668, guid: b0c897c66b19021448a2a7bcb373d60b,
       type: 3}
   - m_RefCount: 5
     m_Data: {fileID: 5780770534196861083, guid: b0c897c66b19021448a2a7bcb373d60b,
       type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: -3889058175634479619, guid: 06e820fa15927b8488b1815c066d8c1b,
+      type: 3}
   m_TileMatrixArray:
   - m_RefCount: 1265
     m_Data:
@@ -14314,7 +14314,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1143651956}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fef511cdc45d7ab4cad7408ec61c33d5, type: 3}
+  m_Script: {fileID: 11500000, guid: c6a9c1689fff85d459bf8dcaa4936c84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!61 &1143651958
@@ -15158,9 +15158,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c111c70ccd876141b0762f63bb733e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  backmusic: {fileID: 0}
   canvas: {fileID: 1581068952}
   SettingPanel: {fileID: 1852215577}
   ExitPanel: {fileID: 792107939}
+  BGAudio: {fileID: 0}
+  clickAudio: {fileID: 0}
+  viveOb: {fileID: 0}
 --- !u!114 &1581068954
 MonoBehaviour:
   m_ObjectHideFlags: 0

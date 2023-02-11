@@ -61,7 +61,7 @@ public class StartMain : MonoBehaviour
         {
             for (int i = canvasChild; i < canvasChildCount; i++)
             {
-                canvas.transform.GetChild(i).gameObject.SetActive(true);
+                //canvas.transform.GetChild(i).gameObject.SetActive(true);
             }
         }
         ExitPanel.SetActive(false);
