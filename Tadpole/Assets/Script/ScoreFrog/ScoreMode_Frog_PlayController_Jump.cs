@@ -11,7 +11,7 @@ public class ScoreMode_Frog_PlayController_Jump : MonoBehaviour
     void Start()
     {
         rigid = GetComponent<Rigidbody2D>();
-        jumpPower = 6;
+        jumpPower = 17;
     }
 
     // Update is called once per frame
