@@ -22,4 +22,12 @@ public class Enemy_drangonfly : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.layer == 23)
+        {
+            Destroy(gameObject);
+        }
+    }
 }
