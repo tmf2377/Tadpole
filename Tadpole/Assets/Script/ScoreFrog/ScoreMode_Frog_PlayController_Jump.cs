@@ -25,7 +25,7 @@ public class ScoreMode_Frog_PlayController_Jump : MonoBehaviour
         if (collision.gameObject.tag == "ScoreMode_Frog_Enemy")
         {
             rigid.AddForce(Vector2.up * jumpPower, ForceMode2D.Impulse);
-            Debug.Log("Ads");
+           // Debug.Log("Ads");
         }
     }
 }
