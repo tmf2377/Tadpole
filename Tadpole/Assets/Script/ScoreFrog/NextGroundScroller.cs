@@ -19,7 +19,7 @@ public class NextGroundScroller : MonoBehaviour
     {
         for(int i=0; i<tiles.Length;i++)
         {
-            if(-6 >= tiles[i].transform.position.x)
+            if(-12 >= tiles[i].transform.position.x)
             {
                 for(int q = 0;q < tiles.Length;q++)
                 {

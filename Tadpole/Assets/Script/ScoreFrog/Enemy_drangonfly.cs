@@ -17,7 +17,7 @@ public class Enemy_drangonfly : MonoBehaviour
     void Update()
     {
         rigid.velocity = new Vector2(speed, 0);      // 그 고도에서 비행
-        if(this.rigid.position.x > 8 || this.rigid.position.x < -7)
+        if(this.rigid.position.x > 12 || this.rigid.position.x < -12)
         {
             Destroy(gameObject);
         }
