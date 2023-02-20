@@ -5,15 +5,14 @@ using UnityEngine.EventSystems;
 
 public class ScoreMode_Frog_PlayerController_LeftRight : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
-    bool isPressed = false;
+    public bool isPressed = false;
     public float Speed;
     public GameObject Player;
-    
 
     // Start is called before the first frame update
     void Start()
     {
-       
+        
     }
 
     // Update is called once per frame
@@ -22,9 +21,7 @@ public class ScoreMode_Frog_PlayerController_LeftRight : MonoBehaviour, IPointer
         if(isPressed)
         {
             Player.transform.Translate(Speed, 0, 0);
-        }
-
-       
+        } 
     }
 
     public void OnPointerDown(PointerEventData eventData)
