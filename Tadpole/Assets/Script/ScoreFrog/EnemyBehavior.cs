@@ -7,11 +7,13 @@ public class EnemyBehavior : MonoBehaviour
     public float speed;
     Rigidbody2D rigid;
     Animator anim;
+    BoxCollider2D box;
     // Start is called before the first frame update
     void Start()
     {
         rigid = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        box = GetComponent <BoxCollider2D>();
     }
 
     // Update is called once per frame
@@ -29,7 +31,14 @@ public class EnemyBehavior : MonoBehaviour
         if (collision.gameObject.layer == 23)
         {
             anim.SetBool("isStepped", true);
-            //Destroy(gameObject);
+            box.size = new Vector2(0, 0);
+            this.speed = -2f;
+            Invoke("Delete", 0.7f);
         }
+    }
+
+    void Delete()
+    {
+        Destroy(gameObject);
     }
 }
