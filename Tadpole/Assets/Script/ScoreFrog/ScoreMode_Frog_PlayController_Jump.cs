@@ -40,7 +40,11 @@ public class ScoreMode_Frog_PlayController_Jump : MonoBehaviour
         if(currentHealth == 0)      //피가 다 달면
         {
             Physics2D.IgnoreLayerCollision(ScoreMode_Frog_Enemy, Player, true);    //떨어지며 충돌무시
-        }        
+        }
+        else if(currentHealth != 0)     //떨어지는 도중에라도 하트를 먹으면
+        {
+            Physics2D.IgnoreLayerCollision(ScoreMode_Frog_Enemy, Player, false);    //NPC와 Player는 충돌한다
+        }
     }
 
     void OnCollisionEnter2D(Collision2D collision)
