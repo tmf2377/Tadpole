@@ -19,6 +19,6 @@ public class SceneChange_1 : MonoBehaviour
 
     public void FrogScene()
     {
-        SceneManager.LoadScene("InfiniteFrog");
+        SceneManager.LoadScene("Frog_intro");
     }
 }
