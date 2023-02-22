@@ -58,10 +58,16 @@ public class ScoreMode_Frog_PlayController_Jump : MonoBehaviour
             anim.SetBool("isJump", true);
             Invoke("isJumpFalse", 1);
         }
+        else if(collision.gameObject.layer == 27)   //게임이 끝남
+        {
+
+        }
     }
 
     void isJumpFalse()
     {
         anim.SetBool("isJump", false);
     }
+
+
 }
