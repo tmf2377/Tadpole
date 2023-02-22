@@ -2891,6 +2891,7 @@ GameObject:
   - component: {fileID: 530808082}
   - component: {fileID: 530808085}
   - component: {fileID: 530808084}
+  - component: {fileID: 530808081}
   - component: {fileID: 530808086}
   m_Layer: 23
   m_Name: Player
@@ -2899,6 +2900,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &530808081
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 530808080}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!212 &530808082
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2958,7 +2978,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 530808080}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.25, y: 45.3, z: 0}
+  m_LocalPosition: {x: -6.21, y: 47.4, z: 0}
   m_LocalScale: {x: 0.65, y: 0.65, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3025,7 +3045,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rigid: {fileID: 0}
   currentHealth: 0
-  jumpPower: 17
+  jumpPower: 0
 --- !u!1 &531544325
 GameObject:
   m_ObjectHideFlags: 0
@@ -8116,7 +8136,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 3.5
+  orthographic size: 3.55
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -8139,8 +8159,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1590620514}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.15, y: 9.94, z: -10}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.4, y: 45.6, z: -46.63978}
   m_LocalScale: {x: 1.4375, y: 1.425, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
