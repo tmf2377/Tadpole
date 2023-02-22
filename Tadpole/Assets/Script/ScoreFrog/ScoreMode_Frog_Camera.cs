@@ -23,7 +23,7 @@ public class ScoreMode_Frog_Camera : MonoBehaviour
         height = Camera.main.orthographicSize;  //세로의 절반크기
         width = height * Screen.width / Screen.height;  //가로 = 세로 * 스크린 가로 / 스크린 세로
         camera = GetComponent<Camera>();
-        score = GameObject.Find("Score").GetComponent<score>().ScoreTime;
+        score = GameObject.Find("Score").GetComponent<Score_Frog_score>().ScoreTime;
         backgroundTrriger = 0;
         BackgroundTrrigerIncrease();
     }
