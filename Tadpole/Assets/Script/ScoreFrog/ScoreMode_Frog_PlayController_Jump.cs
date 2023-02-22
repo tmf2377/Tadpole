@@ -9,6 +9,7 @@ public class ScoreMode_Frog_PlayController_Jump : MonoBehaviour
     public float currentHealth;
     SpriteRenderer spriteRenderer;
     GameManager gameManager;
+    Animator anim;
     public float jumpPower;
     bool left,right;
     int ScoreMode_Frog_Enemy, Player;   //NPC와 Player의 Layer 번호
@@ -20,6 +21,7 @@ public class ScoreMode_Frog_PlayController_Jump : MonoBehaviour
         jumpPower = 10;
         spriteRenderer = GetComponent<SpriteRenderer>();
         gameManager = GetComponent<GameManager>();
+        anim = GetComponent<Animator>();
         ScoreMode_Frog_Enemy = LayerMask.NameToLayer("ScoreMode_Frog_Enemy");
         Player = LayerMask.NameToLayer("Player");
         Physics2D.IgnoreLayerCollision(ScoreMode_Frog_Enemy, Player, false);    //NPC와 Player는 충돌한다
@@ -53,6 +55,13 @@ public class ScoreMode_Frog_PlayController_Jump : MonoBehaviour
         {
             //rigid.AddForce(Vector2.up * jumpPower, ForceMode2D.Impulse);
             rigid.velocity = new Vector2(0, jumpPower);
+            anim.SetBool("isJump", true);
+            Invoke("isJumpFalse", 1);
         }
+    }
+
+    void isJumpFalse()
+    {
+        anim.SetBool("isJump", false);
     }
 }
