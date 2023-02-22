@@ -10,12 +10,16 @@ public class EnemyAI : MonoBehaviour
 
     private float distance;
 
+
+    public SpriteRenderer enemy;
+
     //추가작업
     //public float max;
     //Vector2 waypoint;
 
     void Start()
     {
+        enemy = GetComponent<SpriteRenderer>();
         //추가
         //waypoint = new Vector2(Random.Range(-max, max), Random.Range(-max, max));
     }
@@ -30,6 +34,16 @@ public class EnemyAI : MonoBehaviour
 
         transform.position = Vector2.MoveTowards(this.transform.position, player.transform.position, speed * Time.deltaTime);
         transform.rotation = Quaternion.Euler(Vector3.forward * angle);
+
+        if(angle > -90 && angle < 90)
+        {
+            enemy.flipY = false;
+        }
+        else
+        {
+            enemy.flipY = true;
+        }
+
 
         /*
         if (distance < distanceBetween)
