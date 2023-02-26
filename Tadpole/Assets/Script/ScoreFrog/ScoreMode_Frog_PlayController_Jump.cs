@@ -14,6 +14,7 @@ public class ScoreMode_Frog_PlayController_Jump : MonoBehaviour
     bool left,right;
     int ScoreMode_Frog_Enemy, Player;   //NPC와 Player의 Layer 번호
     public float finalScore;
+    public bool isGameOver;
 
     // Start is called before the first frame update
     void Start()
@@ -21,6 +22,7 @@ public class ScoreMode_Frog_PlayController_Jump : MonoBehaviour
         rigid = GetComponent<Rigidbody2D>();
         jumpPower = 10;
         spriteRenderer = GetComponent<SpriteRenderer>();
+        isGameOver = false;
 
         anim = GetComponent<Animator>();
         ScoreMode_Frog_Enemy = LayerMask.NameToLayer("ScoreMode_Frog_Enemy");
@@ -62,6 +64,7 @@ public class ScoreMode_Frog_PlayController_Jump : MonoBehaviour
         else if(collision.gameObject.layer == 27)   //게임이 끝남
         {
             finalScore =  GameObject.Find("Score").GetComponent<Score_Frog_score>().ScoreTime;  //끝나는 순간의 점수
+            isGameOver = true;
         }
     }
 
