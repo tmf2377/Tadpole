@@ -27,6 +27,7 @@ public class GameManager : MonoBehaviour
     public GameObject frog;
 
     // UI 관련 변수
+    public GameObject StartCam;
     public GameObject tadpoleCam;
     public GameObject frogCam;
 
@@ -52,8 +53,8 @@ public class GameManager : MonoBehaviour
         //maxScoreTxt.text = string.Format("{0:n0}", PlayerPrefs.GetInt("MaxScore"));
         isFirstLoad = true;
 
-        IsTadpole = false;
-        IsFrog = false;
+        //IsTadpole = false;
+        //IsFrog = false;
 
         menuPanel.SetActive(true);
         gamePanel.SetActive(false);
@@ -68,8 +69,14 @@ public class GameManager : MonoBehaviour
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         activeScene = SceneManager.GetActiveScene().buildIndex;
+
+        if(activeScene != 0)
+        {
+            StartCam.SetActive(false);
+        }
         // 해당 씬에 맞게 올챙이/개구리를 on/off
         // (씬 로드 시) 씬에 있는 카메라에 플레이어 할당
+        /*
         if (activeScene == 0)
         {
             tadpoleCam.SetActive(false);
@@ -96,7 +103,7 @@ public class GameManager : MonoBehaviour
             tadpole.SetActive(false);
             frog.SetActive(true);
 
-        }
+        }*/
 
 
         if (!isFirstLoad && SceneManager.GetActiveScene().name == "0_StartScene")

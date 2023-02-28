@@ -14,7 +14,7 @@ public class SceneChange_1 : MonoBehaviour
 
     public void TadpoleScene()
     {
-        SceneManager.LoadScene("InfiniteTedpole");
+        SceneManager.LoadScene("Tedpole_intro");
     }
 
     public void FrogScene()
