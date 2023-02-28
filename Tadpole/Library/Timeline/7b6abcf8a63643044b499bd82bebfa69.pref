@@ -18,7 +18,7 @@ MonoBehaviour:
   trackScale: 1
   playRangeEnabled: 0
   timeAreaPlayRange: {x: 3.4028235e+38, y: 3.4028235e+38}
-  windowTime: 0
+  windowTime: 5.933333333333334
   verticalScroll: 0
   showMarkerHeader: 0
   m_Keys:
@@ -244,7 +244,7 @@ MonoBehaviour:
     showMarkers: 1
     showInlineCurves: 1
     inlineAnimationCurveHeight: 212
-    lastInlineCurveDataID: -124852
+    lastInlineCurveDataID: 16722
     inlineCurvesState:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
@@ -270,8 +270,8 @@ MonoBehaviour:
     inlineCurvesShownAreaInsideMargins:
       serializedVersion: 2
       x: 0
-      y: -4.087599
+      y: -5.938846
       width: 8.568512
-      height: 11.165152
+      height: 15.098847
     m_MarkerTimeStampsKeys: 
     m_MarkerTimeStampsValues: 
