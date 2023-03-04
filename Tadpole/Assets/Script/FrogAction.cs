@@ -13,18 +13,18 @@ public class FrogAction : MonoBehaviour
     public float jumpPower;
 
     private int jumpCount = 2;
-    private bool isGround = false;
+    //private bool isGround = false;
     
     Rigidbody2D rigid;
     SpriteRenderer spriteRenderer;
-    AudioSource walkAudio;
+    //AudioSource walkAudio;
     Animator anim;
 
     void Awake()
     {
         rigid = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-        walkAudio = GetComponent<AudioSource>();
+        //walkAudio = GetComponent<AudioSource>();
         anim = GetComponent<Animator>();
     }
 
@@ -98,11 +98,11 @@ public class FrogAction : MonoBehaviour
 
         if (rigid.velocity.y == 0)
         {
-            isGround = true;
+            //isGround = true;
             jumpCount = 2;
         }
-        else
-            isGround = false;
+        //else
+            //isGround = false;
 
         
     }

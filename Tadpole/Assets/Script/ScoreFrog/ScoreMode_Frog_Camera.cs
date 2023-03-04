@@ -32,6 +32,7 @@ public class ScoreMode_Frog_Camera : MonoBehaviour
         camera.backgroundColor = camera_background.Evaluate(backgroundTrriger);
     }
 
+    /*
     void Awake()
     {
         if (instance == null)
@@ -44,7 +45,7 @@ public class ScoreMode_Frog_Camera : MonoBehaviour
             if (instance != this)
                 Destroy(this.gameObject);
         }
-    }
+    }*/
 
     private void OnDrawGizmos()
     {

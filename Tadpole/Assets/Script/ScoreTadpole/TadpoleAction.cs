@@ -11,17 +11,21 @@ public class TadpoleAction : MonoBehaviour
     [SerializeField]
     private VirtualJoystick virtualJoystick;
     public float moveSpeed = 4.5f;
-    AudioSource walkAudio;
+
+    //AudioSource walkAudio;
     SpriteRenderer spriteRenderer;
 
     private Rigidbody2D rigid2D;
+    Animator anim;
 
     public GameObject gameOverPanel;
+    private bool isStar;
 
     public void Awake()
     {
         rigid2D = GetComponent<Rigidbody2D>();
-        walkAudio = GetComponent<AudioSource>();
+        //walkAudio = GetComponent<AudioSource>();
+        anim = GetComponent<Animator>();
     }
 
 
@@ -29,6 +33,7 @@ public class TadpoleAction : MonoBehaviour
     {
         spriteRenderer = this.GetComponent<SpriteRenderer>();
         gameOverPanel.SetActive(false);
+        isStar = false;
     }
 
     private void Update()
@@ -41,13 +46,6 @@ public class TadpoleAction : MonoBehaviour
             //transform.position += new Vector3(x, y, 0) * moveSpeed * Time.deltaTime;
             rigid2D.velocity = new Vector3(x, y, 0) * moveSpeed;
 
-            // 걸을때 소리
-            //if (!walkAudio.isPlaying)
-            //    walkAudio.Play();
-        }
-        else
-        {
-            //walkAudio.Stop();
         }
 
         //방향전환
@@ -55,25 +53,52 @@ public class TadpoleAction : MonoBehaviour
             spriteRenderer.flipX = true;
         if (x > 0)
             spriteRenderer.flipX = false;
-
     }
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.tag == "Enemy")
         {
-            Time.timeScale = 0;
-            gameOverPanel.SetActive(true);
+            if(isStar == false)
+            {
+                Time.timeScale = 0;
+                gameOverPanel.SetActive(true);
+            }
         }
+
+        if(collision.gameObject.tag == "starItem")
+        {
+            isStar = true;
+            anim.SetBool("isStar", true);
+            Invoke("StarEnd", 10f);
+        }
+
+        if (collision.gameObject.tag == "boosterItem")
+        {
+            moveSpeed = 9f;
+            Invoke("BoosterEnd", 4f);
+        }
+    }
+    private void BoosterEnd()
+    {
+        moveSpeed = 4.5f;
+    }
+
+    private void StarEnd()
+    {
+        anim.SetBool("isStar", false);
+        isStar = false;
     }
 
     public void Replay()
     {
-        SceneManager.LoadScene("Tedpole_intro");
+        SceneManager.LoadScene("InfiniteTedpole");
+        Time.timeScale = 1;
     }
 
     public void GoMain()
     {
         SceneManager.LoadScene("0_StartScene");
+        Time.timeScale = 1;
     }
 }

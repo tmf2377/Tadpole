@@ -20,7 +20,7 @@ public class CameraFollow : MonoBehaviour
         width = height * Screen.width / Screen.height;  //가로 = 세로 * 스크린 가로 / 스크린 세로
     }
 
-    void Awake()
+    /*void Awake()
     {
         if (instance == null)
         {
@@ -32,7 +32,7 @@ public class CameraFollow : MonoBehaviour
             if (instance != this)
                 Destroy(this.gameObject);
         }
-    }
+    }*/
 
     private void OnDrawGizmos()
     {
