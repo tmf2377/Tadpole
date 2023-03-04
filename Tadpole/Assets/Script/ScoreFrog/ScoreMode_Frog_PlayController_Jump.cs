@@ -63,6 +63,7 @@ public class ScoreMode_Frog_PlayController_Jump : MonoBehaviour
         }
         else if(collision.gameObject.layer == 27)   //게임이 끝남
         {
+            
             finalScore =  GameObject.Find("Score").GetComponent<Score_Frog_score>().ScoreTime;  //끝나는 순간의 점수
             isGameOver = true;
         }

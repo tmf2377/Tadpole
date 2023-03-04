@@ -27,7 +27,7 @@ public class GameManager : MonoBehaviour
     public GameObject frog;
 
     // UI 관련 변수
-    public GameObject StartCam;
+    
     public GameObject tadpoleCam;
     public GameObject frogCam;
 
@@ -70,9 +70,11 @@ public class GameManager : MonoBehaviour
     {
         activeScene = SceneManager.GetActiveScene().buildIndex;
 
-        if(activeScene != 0)
+        if(activeScene == 0)
         {
-            StartCam.SetActive(false);
+            menuPanel.SetActive(true);
+            gamePanel.SetActive(false);
+            scoreSelectPanel.SetActive(false);
         }
         // 해당 씬에 맞게 올챙이/개구리를 on/off
         // (씬 로드 시) 씬에 있는 카메라에 플레이어 할당
@@ -125,8 +127,8 @@ public class GameManager : MonoBehaviour
 
     public void GameStart()
     {
-        menuPanel.SetActive(false);
-        gamePanel.SetActive(true);
+        //menuPanel.SetActive(false);
+        //gamePanel.SetActive(true);
         //Player.instance.gameObject.SetActive(true);
         isFirstLoad = false;
     }
@@ -135,19 +137,8 @@ public class GameManager : MonoBehaviour
     {
         stage = SceneManager.GetActiveScene().buildIndex - 1;
 
-
         // 스테이지에 따른 올챙이 or 개구리 코드
-        //if (stage < 4){
-        //  IsTadpole = true;
-        //  IsFrog = false;
-        //}else{
-        //  IsTadpole = false;
-        //  IsFrog = true;
-        //}
 
-
-        //clearPortal = GameObject.FindGameObjectWithTag("StartZone");
-        //clearPortal.SetActive(false);
     }
 
     public void ScoreBtn()
