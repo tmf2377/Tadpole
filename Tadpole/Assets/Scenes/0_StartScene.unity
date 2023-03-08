@@ -1282,7 +1282,6 @@ MonoBehaviour:
   enemyList: 
   tadpole: {fileID: 2092286000}
   frog: {fileID: 1772674463}
-  StartCam: {fileID: 1977721658}
   tadpoleCam: {fileID: 1882952594}
   frogCam: {fileID: 842565392}
   menuPanel: {fileID: 170920890}
