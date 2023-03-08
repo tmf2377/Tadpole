@@ -479,7 +479,7 @@ GameObject:
   - component: {fileID: 124721169}
   - component: {fileID: 124721165}
   - component: {fileID: 124721168}
-  m_Layer: 0
+  m_Layer: 21
   m_Name: booster
   m_TagString: boosterItem
   m_Icon: {fileID: 0}
@@ -2108,6 +2108,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1128939801}
   - component: {fileID: 1128939803}
+  - component: {fileID: 1128939804}
   - component: {fileID: 1128939802}
   m_Layer: 5
   m_Name: ScoreText
@@ -2176,6 +2177,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1128939800}
   m_CullTransparentMesh: 0
+--- !u!114 &1128939804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1128939800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39059f89613bd99489a70797e3c08456, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  finalScore: 0
+  scoreText: {fileID: 1128939802}
 --- !u!1 &1196262749
 GameObject:
   m_ObjectHideFlags: 0
@@ -4767,6 +4782,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ScoreTime: 0
   text_Timer: {fileID: 1291978529}
+  fianlScore: 0
 --- !u!1 &1297372439
 GameObject:
   m_ObjectHideFlags: 0
@@ -4930,7 +4946,7 @@ MonoBehaviour:
   fishPrefab: {fileID: 6137443545823790056}
   sharkPrefab: {fileID: 7716289315021087534}
   fishInterval: 5
-  sharkInterval: 55
+  sharkInterval: 35
 --- !u!4 &1463311771
 Transform:
   m_ObjectHideFlags: 0
@@ -5512,7 +5528,7 @@ GameObject:
   - component: {fileID: 1650748117}
   - component: {fileID: 1650748118}
   - component: {fileID: 1650748116}
-  m_Layer: 0
+  m_Layer: 23
   m_Name: Tadpole
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -5668,7 +5684,7 @@ GameObject:
   - component: {fileID: 1680813509}
   - component: {fileID: 1680813505}
   - component: {fileID: 1680813508}
-  m_Layer: 0
+  m_Layer: 21
   m_Name: star
   m_TagString: starItem
   m_Icon: {fileID: 0}
@@ -6457,7 +6473,7 @@ GameObject:
   - component: {fileID: 6137443545823790057}
   - component: {fileID: 3685490453125056918}
   - component: {fileID: 6137443545823790063}
-  m_Layer: 0
+  m_Layer: 22
   m_Name: scoreFish1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -6646,7 +6662,7 @@ GameObject:
   - component: {fileID: 7716289315021087536}
   - component: {fileID: 4731744546029511064}
   - component: {fileID: 7716289315021087533}
-  m_Layer: 0
+  m_Layer: 22
   m_Name: scoreShark1
   m_TagString: Enemy
   m_Icon: {fileID: 0}

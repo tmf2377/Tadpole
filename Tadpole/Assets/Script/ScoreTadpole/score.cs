@@ -7,6 +7,8 @@ public class score : MonoBehaviour
 {
     public float ScoreTime;
     public Text text_Timer;
+
+    public float fianlScore;
     
     void Start()
     {
@@ -18,6 +20,9 @@ public class score : MonoBehaviour
     void Update()
     {
         ScoreTime += Time.deltaTime;
-        text_Timer.text = "" + Mathf.Round(ScoreTime);
+        fianlScore = Mathf.Round(ScoreTime);
+        text_Timer.text = "" + fianlScore;
     }
+
+
 }

@@ -31,8 +31,8 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
+  - Item
+  - Enemy
   - Player
   - Border
   - ScoreMode_Frog_Enemy
