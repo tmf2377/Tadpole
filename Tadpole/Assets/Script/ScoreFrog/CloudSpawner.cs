@@ -39,7 +39,7 @@ public class CloudSpawner : MonoBehaviour
 
     void spawntimeControl()
     {
-        spawntiming = Random.Range(10, 20f);
+        spawntiming = Random.Range(5, 15f);
         Invoke("spawntimeControl", spawntiming);
     }
 }
