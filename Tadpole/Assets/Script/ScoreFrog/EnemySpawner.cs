@@ -41,7 +41,7 @@ public class EnemySpawner : MonoBehaviour
 
     void spawntimeControl()
     {
-        spawntiming = Random.Range(1, 6f);
+        spawntiming = Random.Range(2.5f, 6f);
         Invoke("spawntimeControl", spawntiming);
     }
 }
