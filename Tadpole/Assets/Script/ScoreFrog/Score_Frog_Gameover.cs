@@ -20,7 +20,7 @@ public class Score_Frog_Gameover : MonoBehaviour
     }
     public void RePlay()
     {
-        SceneManager.LoadScene("Frog_intro");
+        SceneManager.LoadScene("InfiniteFrog");
     }
 
     public void QUIT()

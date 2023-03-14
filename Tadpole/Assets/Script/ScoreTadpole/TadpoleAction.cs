@@ -19,7 +19,11 @@ public class TadpoleAction : MonoBehaviour
     Animator anim;
 
     public GameObject gameOverPanel;
-    private bool isStar;
+    public bool isStar;
+    private float starTime;
+
+    public GameObject BGM;
+    public GameObject starBGM;
 
     public void Awake()
     {
@@ -34,6 +38,7 @@ public class TadpoleAction : MonoBehaviour
         spriteRenderer = this.GetComponent<SpriteRenderer>();
         gameOverPanel.SetActive(false);
         isStar = false;
+        starTime = 47f;
     }
 
     private void Update()
@@ -66,11 +71,18 @@ public class TadpoleAction : MonoBehaviour
             }
         }
 
-        if(collision.gameObject.tag == "starItem")
+        if (collision.gameObject.tag == "starItem")
         {
             isStar = true;
             anim.SetBool("isStar", true);
-            Invoke("StarEnd", 10f);
+            Invoke("StarEnd", 9f);
+            starTime += 7f;
+            GameObject.Find("ItemSpawner").GetComponent<ItemSpawner>().starInterval = starTime;
+            starBGM.SetActive(true);
+            BGM.SetActive(false);
+            GameObject.Find("Game Manager").GetComponent<StartMain>().BGAudio = GameObject.Find("starBGM");
+            
+
         }
 
         if (collision.gameObject.tag == "boosterItem")
@@ -79,6 +91,7 @@ public class TadpoleAction : MonoBehaviour
             Invoke("BoosterEnd", 4f);
         }
     }
+
     private void BoosterEnd()
     {
         moveSpeed = 4.5f;
@@ -88,6 +101,9 @@ public class TadpoleAction : MonoBehaviour
     {
         anim.SetBool("isStar", false);
         isStar = false;
+        BGM.SetActive(true);
+        starBGM.SetActive(false);
+        GameObject.Find("Game Manager").GetComponent<StartMain>().BGAudio = GameObject.Find("BGM");
     }
 
     public void Replay()

@@ -9,7 +9,7 @@ public class ItemAction : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            Item.SetActive(false);
+            Destroy(gameObject);
         }
 
     }

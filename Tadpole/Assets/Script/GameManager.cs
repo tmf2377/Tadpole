@@ -12,8 +12,8 @@ public class GameManager : MonoBehaviour
     
     // Don't Destroy 관련 변수
     public bool isFirstLoad;
-    public bool IsTadpole;
-    public bool IsFrog;
+    //public bool IsTadpole;
+    //public bool IsFrog;
 
     // stage 관련 변수
     public int stage;

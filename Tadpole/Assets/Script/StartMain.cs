@@ -7,8 +7,10 @@ using UnityEngine.SceneManagement;
 public class StartMain : MonoBehaviour
 {
     //bgm;
-    GameObject BackgroundMusic;
-    public AudioSource backmusic;
+    //public GameObject BGM;
+
+    //GameObject BackgroundMusic;
+    //public AudioSource backmusic;
     public GameObject canvas;
     public GameObject SettingPanel;
     public GameObject ExitPanel;
@@ -19,6 +21,27 @@ public class StartMain : MonoBehaviour
     public GameObject BGAudio;
     public GameObject clickAudio;
     public GameObject viveOb;
+
+    private bool star;
+
+
+    void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        BGAudio = GameObject.Find("BGM");
+    }
+
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+
+
 
     void Start()
     {
@@ -75,11 +98,13 @@ public class StartMain : MonoBehaviour
     public void buttonSettingsOn()
     {
         SettingPanel.SetActive(true);
+        Time.timeScale = 0;
     }
 
     public void PanelSettingsOff()
     {
         SettingPanel.SetActive(false);
+        Time.timeScale = 1;
     }
 
     public void BGAudioOn()
