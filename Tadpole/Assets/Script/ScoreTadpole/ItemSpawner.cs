@@ -10,9 +10,9 @@ public class ItemSpawner : MonoBehaviour
     private GameObject boosterPrefab;
 
     [SerializeField]
-    private float starInterval = 53f;
+    public float starInterval = 47f;
     [SerializeField]
-    private float boosterInterval = 13f;
+    public float boosterInterval = 13f;
 
     void Start()
     {

@@ -62,7 +62,7 @@ public class EnemyAI : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")
         {
-            this.gameObject.SetActive(false);
+            Destroy(gameObject);
         }
     }
 }
