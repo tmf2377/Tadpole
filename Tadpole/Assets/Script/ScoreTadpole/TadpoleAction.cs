@@ -25,10 +25,15 @@ public class TadpoleAction : MonoBehaviour
     public GameObject BGM;
     public GameObject starBGM;
 
+    public AudioSource overSound;
+    public AudioSource booster;
+
+
+
     public void Awake()
     {
         rigid2D = GetComponent<Rigidbody2D>();
-        //walkAudio = GetComponent<AudioSource>();
+        
         anim = GetComponent<Animator>();
     }
 
@@ -39,6 +44,9 @@ public class TadpoleAction : MonoBehaviour
         gameOverPanel.SetActive(false);
         isStar = false;
         starTime = 47f;
+
+        starBGM.SetActive(false);
+        BGM.SetActive(true);
     }
 
     private void Update()
@@ -68,6 +76,9 @@ public class TadpoleAction : MonoBehaviour
             {
                 Time.timeScale = 0;
                 gameOverPanel.SetActive(true);
+                
+                BGM.SetActive(false);
+                overSound.Play();
             }
         }
 
@@ -88,12 +99,14 @@ public class TadpoleAction : MonoBehaviour
         if (collision.gameObject.tag == "boosterItem")
         {
             moveSpeed = 9f;
+            booster.Play();
             Invoke("BoosterEnd", 4f);
         }
     }
 
     private void BoosterEnd()
     {
+        booster.Stop();
         moveSpeed = 4.5f;
     }
 

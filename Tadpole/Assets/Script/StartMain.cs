@@ -6,11 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class StartMain : MonoBehaviour
 {
-    //bgm;
-    //public GameObject BGM;
 
-    //GameObject BackgroundMusic;
-    //public AudioSource backmusic;
     public GameObject canvas;
     public GameObject SettingPanel;
     public GameObject ExitPanel;
@@ -20,9 +16,10 @@ public class StartMain : MonoBehaviour
     // 설정 관련 변수
     public GameObject BGAudio;
     public GameObject clickAudio;
+    public GameObject EFS;
     public GameObject viveOb;
 
-    private bool star;
+    private bool isstar;
 
 
     void OnEnable()
@@ -33,6 +30,7 @@ public class StartMain : MonoBehaviour
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         BGAudio = GameObject.Find("BGM");
+        EFS = GameObject.Find("EFS");
     }
 
     private void OnDisable()
@@ -47,7 +45,8 @@ public class StartMain : MonoBehaviour
     {
         ExitPanel.SetActive(false);
         SettingPanel.SetActive(false);
-        //BackgroundMusic = GameObject.FindGameObjectWithTag("mainBGM");
+
+        EFS = null;
     }
 
     // Update is called once per frame
@@ -120,11 +119,13 @@ public class StartMain : MonoBehaviour
     public void clickAudioOn()
     {
         clickAudio.SetActive(true);
+        EFS.SetActive(true);
     }
 
     public void clickAudioOff()
     {
         clickAudio.SetActive(false);
+        EFS.SetActive(false);
     }
 
     public void viveOn()
