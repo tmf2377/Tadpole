@@ -16,6 +16,8 @@ public class ScoreMode_Frog_PlayController_Jump : MonoBehaviour
     public float finalScore;
     public bool isGameOver;
 
+    public AudioSource audioSource;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +30,8 @@ public class ScoreMode_Frog_PlayController_Jump : MonoBehaviour
         ScoreMode_Frog_Enemy = LayerMask.NameToLayer("ScoreMode_Frog_Enemy");
         Player = LayerMask.NameToLayer("Player");
         Physics2D.IgnoreLayerCollision(ScoreMode_Frog_Enemy, Player, false);    //NPC와 Player는 충돌한다
+
+        //audioSource = GameObject.Find("EFS");
     }
 
     // Update is called once per frame
@@ -60,12 +64,15 @@ public class ScoreMode_Frog_PlayController_Jump : MonoBehaviour
             rigid.velocity = new Vector2(0, jumpPower);
             anim.SetBool("isJump", true);
             Invoke("isJumpFalse", 1);
+
+            audioSource.Play();
         }
         else if(collision.gameObject.layer == 27)   //게임이 끝남
         {
             
             finalScore =  GameObject.Find("Score").GetComponent<Score_Frog_score>().ScoreTime;  //끝나는 순간의 점수
             isGameOver = true;
+            anim.SetBool("isGameOver", isGameOver);
         }
     }
 

@@ -16,7 +16,14 @@ public class Score_Frog_Gameover : MonoBehaviour
     private void Update()
     {
         isGameOver = GameObject.Find("Player").GetComponent<ScoreMode_Frog_PlayController_Jump>().isGameOver;
-        anim.SetBool("isGameOver", isGameOver);
+
+        if(isGameOver == true)
+        {
+            anim.SetBool("isGameOver", true);
+            isGameOver = false;
+        }
+        //anim.SetBool("isGameOver", isGameOver);
+
     }
     public void RePlay()
     {

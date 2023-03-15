@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 276, y: 292}
   m_MaxSize: {x: 4001, y: 8042}
   vertical: 1
-  controlID: 156
+  controlID: 150
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -122,8 +122,8 @@ MonoBehaviour:
     y: 30
     width: 2560
     height: 1307
-  m_MinSize: {x: 579, y: 342}
-  m_MaxSize: {x: 12004, y: 8042}
+  m_MinSize: {x: 579, y: 492}
+  m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
   controlID: 70
 --- !u!114 &6
@@ -147,8 +147,8 @@ MonoBehaviour:
     y: 0
     width: 1808
     height: 1307
-  m_MinSize: {x: 303, y: 342}
-  m_MaxSize: {x: 8003, y: 8042}
+  m_MinSize: {x: 303, y: 492}
+  m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
   controlID: 71
 --- !u!114 &7
@@ -198,8 +198,8 @@ MonoBehaviour:
     y: 0
     width: 201
     height: 744
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 21}
   m_Panes:
   - {fileID: 21}
@@ -215,7 +215,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ConsoleWindow
+  m_Name: ProjectBrowser
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -224,15 +224,15 @@ MonoBehaviour:
     y: 744
     width: 1808
     height: 563
-  m_MinSize: {x: 101, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 22}
+  m_MinSize: {x: 231, y: 271}
+  m_MaxSize: {x: 10001, y: 10021}
+  m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 22}
   - {fileID: 19}
   - {fileID: 15}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1143,9 +1143,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.3469387, y: 13.179468, z: -0.9701716}
+    m_Target: {x: 0, y: 0, z: 0}
     speed: 2
-    m_Value: {x: -0.3469387, y: 13.179468, z: -0.9701716}
+    m_Value: {x: 0, y: 0, z: 0}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1195,9 +1195,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 15.37835
+    m_Target: 10
     speed: 2
-    m_Value: 15.37835
+    m_Value: 10
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1256,7 +1256,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 3360, y: 1440}
+  m_TargetSize: {x: 1605, y: 702}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -1271,10 +1271,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -1680
-    m_HBaseRangeMax: 1680
-    m_VBaseRangeMin: -720
-    m_VBaseRangeMax: 720
+    m_HBaseRangeMin: -802.5
+    m_HBaseRangeMax: 802.5
+    m_VBaseRangeMin: -351
+    m_VBaseRangeMax: 351
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -1294,7 +1294,7 @@ MonoBehaviour:
       y: 21
       width: 1605
       height: 702
-    m_Scale: {x: 0.47767857, y: 0.47767854}
+    m_Scale: {x: 1, y: 1}
     m_Translation: {x: 802.5, y: 351}
     m_MarginLeft: 0
     m_MarginRight: 0
@@ -1302,12 +1302,12 @@ MonoBehaviour:
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -1680
-      y: -734.8038
-      width: 3360
-      height: 1469.6075
+      x: -802.5
+      y: -351
+      width: 1605
+      height: 702
     m_MinimalGUI: 1
-  m_defaultScale: 0.47767857
+  m_defaultScale: 1
   m_LastWindowPixelSize: {x: 1605, y: 723}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
@@ -1364,9 +1364,9 @@ MonoBehaviour:
     m_IsLocked: 1
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: cc560000
-    m_LastClickedID: 22220
-    m_ExpandedIDs: 00000000ca560000cc560000ce560000d056000000ca9a3b
+    m_SelectedIDs: 504e0000
+    m_LastClickedID: 20048
+    m_ExpandedIDs: 000000004e4e0000504e0000524e0000544e0000564e0000584e00005a4e000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1394,7 +1394,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000ca560000cc560000ce560000d0560000
+    m_ExpandedIDs: 000000004e4e0000504e0000524e0000544e0000564e0000584e00005a4e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1449,7 +1449,7 @@ MonoBehaviour:
     m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 68
   m_SkipHiddenPackages: 0
-  m_DirectoriesAreaWidth: 149
+  m_DirectoriesAreaWidth: 340
 --- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1519,21 +1519,21 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 843cfeff0248feff2a49fefff049fefffc4afeff924bfeffb24efeff2c4ffeffb852feff4c56feff9a5bfeff967bfeffd27ffeff7224ffff5426ffff542bffffe42bffff922dffffbe31ffff3634ffff0a3afffff03affff3240ffffd849ffff8a54ffff047effff527effff04e0fffff4ffffff365a0000146300009c6d0000be6d0000088200006e820000ce82000034830000468300006683000062b50000bcb5000022b6000034b6000054b6000094e2000018270100743e0100f4500100b4510100
+      m_ExpandedIDs: 9e3fffff9c40ffff8e45ffffc046ffff2449ffff764affff5e50ffff9a50ffffd250ffff6854ffff9c59ffff025fffffb660fffff266ffff166bffffc088ffffb48affff5efbfffff4ffffff888f000048900000849b0000b89c0000f29e000044a90000aaa900006aaa0000f2b1000026b3000060b50000dabf0000fcbf00001ac0000058c3000048cf00007cd00000b6d2000064dd00004eef000082f00000bcf20000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: Game Panel
+        m_OriginalName: Game Panel
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: 36826
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 8}
       m_SearchString: 
