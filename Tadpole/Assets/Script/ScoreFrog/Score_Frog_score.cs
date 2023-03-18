@@ -20,13 +20,17 @@ public class Score_Frog_score : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        ScoreTime += Time.deltaTime;
+
+        /*
         temp++;
         if(temp % 5 == 0)       //점수증가 속도를 5배 느리게
         {
             //ScoreTime += Time.deltaTime;
             ScoreTime++;
-        }
+        }*/
         
-        text_Timer.text = "" + Mathf.Round(ScoreTime);
+        text_Timer.text = "" + Mathf.Floor(ScoreTime * 100);
     }
 }
