@@ -17,7 +17,7 @@ public class Score_Frog_Gameover_Score : MonoBehaviour
     void Update()
     {
         finalScore = GameObject.Find("Player").GetComponent<ScoreMode_Frog_PlayController_Jump>().finalScore;
-        scoreText.text = "Score : " + finalScore.ToString();
+        scoreText.text = "Score : " + Mathf.Floor(finalScore*100).ToString();
     
     }
 }
