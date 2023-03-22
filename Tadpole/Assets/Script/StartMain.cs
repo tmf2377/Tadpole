@@ -14,9 +14,12 @@ public class StartMain : MonoBehaviour
 
 
     // 설정 관련 변수
-    public GameObject BGAudio;
+    public GameObject BGM1;
+    public GameObject BGM2;
     public GameObject clickAudio;
-    public GameObject EFS;
+    public GameObject overSound;
+    public GameObject EFS1;
+    public GameObject EFS2;
     public GameObject viveOb;
 
     private bool isstar;
@@ -29,8 +32,11 @@ public class StartMain : MonoBehaviour
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        BGAudio = GameObject.Find("BGM");
-        EFS = GameObject.Find("EFS");
+        BGM1 = GameObject.Find("BGM1");
+        BGM2 = GameObject.Find("BGM2");
+        overSound = GameObject.Find("OverSound");
+        EFS1 = GameObject.Find("EFS1");
+        EFS2 = GameObject.Find("EFS2");
     }
 
     private void OnDisable()
@@ -46,7 +52,8 @@ public class StartMain : MonoBehaviour
         ExitPanel.SetActive(false);
         SettingPanel.SetActive(false);
 
-        EFS = null;
+        EFS1 = null;
+        EFS2 = null;
     }
 
     // Update is called once per frame
@@ -108,24 +115,30 @@ public class StartMain : MonoBehaviour
 
     public void BGAudioOn()
     {
-        BGAudio.SetActive(true);
+        BGM1.SetActive(true);
+        BGM2.SetActive(true);
     }
 
     public void BGAudioOff()
     {
-        BGAudio.SetActive(false);
+        BGM1.SetActive(false);
+        BGM2.SetActive(false);
     }
 
     public void clickAudioOn()
     {
         clickAudio.SetActive(true);
-        EFS.SetActive(true);
+        overSound.SetActive(true);
+        EFS1.SetActive(true);
+        EFS2.SetActive(true);
     }
 
     public void clickAudioOff()
     {
         clickAudio.SetActive(false);
-        EFS.SetActive(false);
+        overSound.SetActive(false);
+        EFS1.SetActive(false);
+        EFS2.SetActive(false);
     }
 
     public void viveOn()

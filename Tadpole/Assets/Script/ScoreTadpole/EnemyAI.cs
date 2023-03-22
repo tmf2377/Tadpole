@@ -13,6 +13,7 @@ public class EnemyAI : MonoBehaviour
 
     public SpriteRenderer enemy;
     public Animator anim;
+    public AudioSource buble;
 
     //추가작업
     //public float max;
@@ -64,6 +65,7 @@ public class EnemyAI : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")
         {
+            buble.Play();
             anim.SetBool("isDead", true);
 
             Invoke("Dead", 0.3f);
