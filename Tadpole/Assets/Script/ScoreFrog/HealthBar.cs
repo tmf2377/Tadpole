@@ -9,6 +9,8 @@ public class HealthBar : MonoBehaviour
     public Gradient gradient;
     public Image fill;
 
+    public AudioSource itemSound;
+
     private void Start()
     {
         slider.maxValue = 20;
@@ -29,6 +31,8 @@ public class HealthBar : MonoBehaviour
     }
     public void getHealth()
     {
+        itemSound.Play();
+
         slider.value += 10;
         fill.color = gradient.Evaluate(slider.normalizedValue);
     }
