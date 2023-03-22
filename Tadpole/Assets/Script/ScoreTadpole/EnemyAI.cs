@@ -12,6 +12,7 @@ public class EnemyAI : MonoBehaviour
 
 
     public SpriteRenderer enemy;
+    public Animator anim;
 
     //추가작업
     //public float max;
@@ -20,6 +21,7 @@ public class EnemyAI : MonoBehaviour
     void Start()
     {
         enemy = GetComponent<SpriteRenderer>();
+        anim = GetComponent<Animator>();
         //추가
         //waypoint = new Vector2(Random.Range(-max, max), Random.Range(-max, max));
     }
@@ -62,7 +64,15 @@ public class EnemyAI : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")
         {
-            Destroy(gameObject);
+            anim.SetBool("isDead", true);
+
+            Invoke("Dead", 0.3f);
+            
         }
+    }
+
+    void Dead()
+    {
+        Destroy(gameObject);
     }
 }
