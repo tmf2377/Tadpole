@@ -1704,7 +1704,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.392}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -6240,8 +6240,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   virtualJoystick: {fileID: 975920179}
   moveSpeed: 4.5
+  player: {fileID: 1650748115}
   gameOverPanel: {fileID: 510327035}
   isStar: 0
+  finalScore: 0
   BGM1: {fileID: 424898315}
   BGM2: {fileID: 1348466261}
   overSound: {fileID: 12747107}

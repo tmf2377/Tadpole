@@ -9,12 +9,12 @@ public class Score_Frog_score : MonoBehaviour
     // Start is called before the first frame update
     public float ScoreTime;
     public Text text_Timer;
-    int temp;
+    //int temp;
 
     void Start()
     {
         ScoreTime = 0;
-        temp = 0;
+        //temp = 0;
     }
 
     // Update is called once per frame
