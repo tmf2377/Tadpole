@@ -13,8 +13,8 @@ public class TadpoleAction : MonoBehaviour
     private VirtualJoystick virtualJoystick;
     public float moveSpeed = 4.5f;
 
-    //AudioSource walkAudio;
     SpriteRenderer spriteRenderer;
+    public GameObject player;
 
     private Rigidbody2D rigid2D;
     Animator anim;
@@ -22,12 +22,10 @@ public class TadpoleAction : MonoBehaviour
     public GameObject gameOverPanel;
     public bool isStar;
     private float starTime;
+    public float finalScore;
 
-    //public GameObject BGM;
-    //public GameObject starBGM;
     public AudioSource BGM1;
     public AudioSource BGM2;
-
     public AudioSource overSound;
     public AudioSource booster;
 
@@ -77,7 +75,7 @@ public class TadpoleAction : MonoBehaviour
         else        //이미 한번 광고를 본 경우
         {
             Debug.Log("이미광고를 봄");
-            SceneManager.LoadScene("InfiniteTedpole");      //씬 이동
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);    //씬 이동
             Time.timeScale = 1;
             RegisterReloadHandler(interstitialAd);      //광고 다시 로드
         }
@@ -155,6 +153,8 @@ public class TadpoleAction : MonoBehaviour
         isStar = false;
         starTime = 47f;
 
+        player.GetComponent<CapsuleCollider2D>().enabled = true;
+
         BGM1.Play();
         BGM2.Stop();
 
@@ -205,6 +205,9 @@ public class TadpoleAction : MonoBehaviour
             {
                 Time.timeScale = 0;
                 gameOverPanel.SetActive(true);
+                finalScore = GameObject.Find("Score").GetComponent<score>().fianlScore;
+
+                player.GetComponent<CapsuleCollider2D>().enabled = false;
 
                 BGM1.Stop();
                 BGM2.Stop();

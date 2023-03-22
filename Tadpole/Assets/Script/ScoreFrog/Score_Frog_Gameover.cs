@@ -75,7 +75,7 @@ public class Score_Frog_Gameover : MonoBehaviour
         }
         else        //이미 한번 광고를 본 경우
         {
-            SceneManager.LoadScene("Frog_intro");       //씬 이동
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);       //씬 이동
             RegisterReloadHandler(interstitialAd);      //광고 다시 로드
         }
     }

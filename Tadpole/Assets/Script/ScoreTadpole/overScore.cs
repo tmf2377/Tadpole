@@ -15,7 +15,7 @@ public class overScore : MonoBehaviour
 
     void Update()
     {
-        finalScore = GameObject.Find("Score").GetComponent<score>().fianlScore;
+        finalScore = GameObject.Find("Tadpole").GetComponent<TadpoleAction>().finalScore;
         scoreText.text = "Score : " + finalScore.ToString();
 
     }
