@@ -23,8 +23,10 @@ public class TadpoleAction : MonoBehaviour
     public bool isStar;
     private float starTime;
 
-    public GameObject BGM;
-    public GameObject starBGM;
+    //public GameObject BGM;
+    //public GameObject starBGM;
+    public AudioSource BGM1;
+    public AudioSource BGM2;
 
     public AudioSource overSound;
     public AudioSource booster;
@@ -153,8 +155,9 @@ public class TadpoleAction : MonoBehaviour
         isStar = false;
         starTime = 47f;
 
-        starBGM.SetActive(false);
-        BGM.SetActive(true);
+        BGM1.Play();
+        BGM2.Stop();
+
 
         //---------------구글 Admob 세팅
 
@@ -202,8 +205,9 @@ public class TadpoleAction : MonoBehaviour
             {
                 Time.timeScale = 0;
                 gameOverPanel.SetActive(true);
-                
-                BGM.SetActive(false);
+
+                BGM1.Stop();
+                BGM2.Stop();
                 overSound.Play();
             }
         }
@@ -215,10 +219,9 @@ public class TadpoleAction : MonoBehaviour
             Invoke("StarEnd", 9f);
             starTime += 7f;
             GameObject.Find("ItemSpawner").GetComponent<ItemSpawner>().starInterval = starTime;
-            starBGM.SetActive(true);
-            BGM.SetActive(false);
-            GameObject.Find("Game Manager").GetComponent<StartMain>().BGAudio = GameObject.Find("starBGM");
-            
+
+            BGM1.Pause();
+            BGM2.Play();
 
         }
 
@@ -240,9 +243,9 @@ public class TadpoleAction : MonoBehaviour
     {
         anim.SetBool("isStar", false);
         isStar = false;
-        BGM.SetActive(true);
-        starBGM.SetActive(false);
-        GameObject.Find("Game Manager").GetComponent<StartMain>().BGAudio = GameObject.Find("BGM");
+        BGM1.Play();
+        BGM2.Pause();
+
     }
 
     public void Replay()

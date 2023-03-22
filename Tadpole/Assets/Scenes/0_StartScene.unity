@@ -1273,7 +1273,9 @@ MonoBehaviour:
   ExitPanel: {fileID: 843424749}
   BGAudio: {fileID: 969243026}
   clickAudio: {fileID: 909626284}
-  EFS: {fileID: 0}
+  overSound: {fileID: 0}
+  EFS1: {fileID: 0}
+  EFS2: {fileID: 0}
   viveOb: {fileID: 317756350}
 --- !u!114 &335895414
 MonoBehaviour:
@@ -3141,7 +3143,7 @@ GameObject:
   - component: {fileID: 969243027}
   - component: {fileID: 969243028}
   m_Layer: 0
-  m_Name: BGM
+  m_Name: BGM1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3672,7 +3674,9 @@ MonoBehaviour:
   ExitPanel: {fileID: 843424749}
   BGAudio: {fileID: 969243026}
   clickAudio: {fileID: 909626284}
-  EFS: {fileID: 0}
+  overSound: {fileID: 0}
+  EFS1: {fileID: 0}
+  EFS2: {fileID: 0}
   viveOb: {fileID: 317756350}
 --- !u!1 &1060187987
 GameObject:
