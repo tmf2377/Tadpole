@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System;
 using UnityEngine.Networking;
-using GoogleMobileAds.Api;
+//using GoogleMobileAds.Api;
 
 public class TadpoleAction : MonoBehaviour
 {
@@ -31,10 +31,10 @@ public class TadpoleAction : MonoBehaviour
 
     string adUnitId;
 
-    private InterstitialAd interstitialAd;
+    //private InterstitialAd interstitialAd;
 
 
-    public void LoadInterstitialAd() //광고 로드
+    /*public void LoadInterstitialAd() //광고 로드
     {
         if (interstitialAd != null)
         {
@@ -133,7 +133,7 @@ public class TadpoleAction : MonoBehaviour
 
             LoadInterstitialAd();
         };
-    }
+    }*/
 
 
 
@@ -141,7 +141,7 @@ public class TadpoleAction : MonoBehaviour
     public void Awake()
     {
         rigid2D = GetComponent<Rigidbody2D>();
-        
+
         anim = GetComponent<Animator>();
     }
 
@@ -158,9 +158,9 @@ public class TadpoleAction : MonoBehaviour
         BGM1.Play();
         BGM2.Stop();
 
-
+        /*
         //---------------구글 Admob 세팅
-
+        
         // Initialize the Google Mobile Ads SDK.
         MobileAds.Initialize((InitializationStatus initStatus) =>
         {
@@ -175,7 +175,7 @@ public class TadpoleAction : MonoBehaviour
                     adUnitId = "unexpected_platform";
 #endif
 
-        LoadInterstitialAd();
+        LoadInterstitialAd();*/
     }
 
     private void Update()
@@ -199,9 +199,9 @@ public class TadpoleAction : MonoBehaviour
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag == "Enemy")
+        if (collision.gameObject.tag == "Enemy")
         {
-            if(isStar == false)
+            if (isStar == false)
             {
                 Time.timeScale = 0;
                 gameOverPanel.SetActive(true);
@@ -253,9 +253,9 @@ public class TadpoleAction : MonoBehaviour
 
     public void Replay()
     {
-        ShowAd();
-        /*SceneManager.LoadScene("InfiniteTedpole");
-        Time.timeScale = 1;*/
+        //ShowAd();
+        SceneManager.LoadScene("InfiniteTedpole");
+        Time.timeScale = 1;
     }
 
     public void GoMain()
