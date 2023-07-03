@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using GoogleMobileAds;
-using GoogleMobileAds.Api;
+//using GoogleMobileAds;
+//using GoogleMobileAds.Api;
 
 
 public class Score_Frog_Gameover : MonoBehaviour
@@ -13,29 +13,29 @@ public class Score_Frog_Gameover : MonoBehaviour
 
     string adUnitId;
 
-    private InterstitialAd interstitialAd;
+    //private InterstitialAd interstitialAd;
 
     private void Start()
     {
         anim = GetComponent<Animator>();
         // Initialize the Google Mobile Ads SDK.
-        MobileAds.Initialize((InitializationStatus initStatus) =>
+        /*MobileAds.Initialize((InitializationStatus initStatus) =>
         {
             // This callback is called once the MobileAds SDK is initialized.
         });
 
-        #if UNITY_ANDROID
-                adUnitId = "ca-app-pub-3940256099942544/1033173712";
+#if UNITY_ANDROID
+        adUnitId = "ca-app-pub-3940256099942544/1033173712";
 #elif UNITY_IOS
                     adUnitId = "ca-app-pub-3940256099942544/4411468910";
 #else
                     adUnitId = "unexpected_platform";
 #endif
 
-        LoadInterstitialAd();
+        LoadInterstitialAd();*/
     }
 
-    public void LoadInterstitialAd() //광고 로드
+    /*public void LoadInterstitialAd() //광고 로드
     {
         if (interstitialAd != null)
         {
@@ -75,7 +75,7 @@ public class Score_Frog_Gameover : MonoBehaviour
         }
         else        //이미 한번 광고를 본 경우
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);       //씬 이동
+            SceneManager.LoadScene("Frog_intro");       //씬 이동
             RegisterReloadHandler(interstitialAd);      //광고 다시 로드
         }
     }
@@ -133,14 +133,14 @@ public class Score_Frog_Gameover : MonoBehaviour
 
             LoadInterstitialAd();
         };
-    }
+    }*/
 
 
     private void Update()
     {
         isGameOver = GameObject.Find("Player").GetComponent<ScoreMode_Frog_PlayController_Jump>().isGameOver;
 
-        if(isGameOver == true)
+        if (isGameOver == true)
         {
             anim.SetBool("isGameOver", true);
             isGameOver = false;
@@ -150,7 +150,8 @@ public class Score_Frog_Gameover : MonoBehaviour
     }
     public void RePlay()
     {
-        ShowAd();
+        //ShowAd();
+        SceneManager.LoadScene("Frog_intro");       //씬 이동
     }
 
     public void QUIT()
