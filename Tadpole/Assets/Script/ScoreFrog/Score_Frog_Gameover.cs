@@ -151,7 +151,8 @@ public class Score_Frog_Gameover : MonoBehaviour
     public void RePlay()
     {
         //ShowAd();
-        SceneManager.LoadScene("Frog_intro");       //씬 이동
+        SceneManager.LoadScene("InfiniteFrog");
+        //SceneManager.LoadScene("Frog_intro");       //씬 이동
     }
 
     public void QUIT()

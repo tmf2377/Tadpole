@@ -10,7 +10,7 @@ public class ItemSpawner : MonoBehaviour
     private GameObject boosterPrefab;
 
     [SerializeField]
-    public float starInterval = 47f;
+    public float starInterval = 53f;
     [SerializeField]
     public float boosterInterval = 13f;
 
@@ -24,6 +24,6 @@ public class ItemSpawner : MonoBehaviour
     {
         yield return new WaitForSeconds(interval);
         GameObject newItem = Instantiate(item, new Vector3(Random.Range(-26f, 26), Random.Range(-10f, 10), 0), Quaternion.identity);
-        StartCoroutine(spawnItem(interval, item));
+        StartCoroutine(spawnItem(interval + 5, item));
     }
 }

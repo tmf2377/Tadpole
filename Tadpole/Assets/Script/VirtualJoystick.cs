@@ -21,8 +21,9 @@ public class VirtualJoystick : MonoBehaviour, IPointerDownHandler, IDragHandler,
     public void OnPointerDown(PointerEventData eventData)
     {
         //Debug.Log("Touch Begin : " + eventData);
+        OnDrag(eventData);
     }
-
+    
     // 터치 상태일 때 매 프레임
     public void OnDrag(PointerEventData eventData)
     {
@@ -36,7 +37,7 @@ public class VirtualJoystick : MonoBehaviour, IPointerDownHandler, IDragHandler,
             touchPosition.y = (touchPosition.y / imageBackground.rectTransform.sizeDelta.y);
 
             // touchPosition 값의 정규화 [-n, n]
-            touchPosition = new Vector2(touchPosition.x * 2 , touchPosition.y * 2 );
+            touchPosition = new Vector2(touchPosition.x * 2 - 1, touchPosition.y * 2 - 1);
 
             // touchPosition 값의 정규화 [-1, 1]
             touchPosition = (touchPosition.magnitude > 1) ? touchPosition.normalized : touchPosition;
